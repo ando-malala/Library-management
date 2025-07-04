@@ -41,3 +41,6 @@ public class TypePretService {
         typePretRepository.deleteById(id);
     }
 }
+
+
+// test pull request.
