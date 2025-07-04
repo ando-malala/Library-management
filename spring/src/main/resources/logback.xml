@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Set the root log level to ERROR to suppress most logs -->
+    <root level="ERROR">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!-- Console appender configuration -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} [%level] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.hibernate.SQL" level="OFF"/>
+    <logger name="org.apache.catalina" level="DEBUG"/>
+<logger name="javax.naming" level="DEBUG"/>
+<logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="OFF"/>
+
+
+</configuration>

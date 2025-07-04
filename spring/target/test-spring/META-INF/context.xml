@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- Skip JARs that don't contain TLDs -->
+    <JarScanner scanClassPath="false">
+        <JarScanFilter
+            defaultTldScan="false"
+            tldSkip="*.jar"
+            pluggabilitySkip="*.jar"/>
+    </JarScanner>
+</Context>
